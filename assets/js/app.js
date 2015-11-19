@@ -457,6 +457,10 @@ var locateControl = L.control.locate({
   }
 }).addTo(map);
 
+// L.easyButton( 'fa-question', function(){
+//   $("#questionModal").modal("show");
+// }).addTo(map);
+
 /* Larger screens get expanded layer control and visible sidebar */
 if (document.body.clientWidth <= 767) {
   var isCollapsed = true;
@@ -574,7 +578,7 @@ var layerControl = L.control.groupedLayers(baseLayers, groupedOverlays, {
 //           "<label></label>";
       
       div.innerHTML = legtext;
-        
+        div.innerHTML += "<p><a href='#' onclick='$(\"#questionModal\").modal(\"show\");'>RUCA Code Descriptions</a></p>";
         return div;
     };
 

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css">
     <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.css">
     <link rel="stylesheet" href="assets/leaflet-groupedlayercontrol/leaflet.groupedlayercontrol.css">
+    <!--<link rel="stylesheet" href="assets/css/easy-button.css">-->
     <link rel="stylesheet" href="assets/css/app.css">
 
 
@@ -134,7 +135,79 @@
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+    
+    <div class="modal fade" id="questionModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">
+              Information
+            </h4>
+          </div>
+          <div class="modal-body smaller">
 
+            <h4>Primary RUCA Codes, 2010</h4>
+            <ol>
+  <li>Metropolitan area core: primary flow within an urbanized area (UA)</li>
+  <li>Metropolitan area high commuting: primary flow 30% or more to a UA</li>
+  <li>Metropolitan area low commuting: primary flow 10% to 30% to a UA</li>
+  <li>Micropolitan area core: primary flow within an Urban Cluster of 10,000 to 49,999 (large UC)</li>
+  <li>Micropolitan high commuting: primary flow 30% or more to a large UC</li>            
+  <li>Micropolitan low commuting: primary flow 10% to 30% to a large UC</li>           
+  <li>Small town core: primary flow within an Urban Cluster of 2,500 to 9,999 (small UC)</li>
+  <li>Small town high commuting: primary flow 30% or more to a small UC</li>
+  <li>Small town low commuting: primary flow 10% to 30% to a small UC</li>            
+  <li>Rural areas: primary flow to a tract outside a UA or UC</li>      
+  </ol>  
+            <p>* 99&nbsp;&nbsp;Not coded: Census tract has zero population and no rural-urban identifier information</p>
+
+<h4>Secondary RUCA Codes, 2010</h4>
+            <ol>
+            <li>Metropolitan area core: primary flow within an urbanized area (UA)
+              <ol>
+                <li>Secondary flow 30% to 50% to a larger UA</li>
+              </ol></li>
+            <li>Metropolitan area high commuting: primary flow 30% or more to a UA
+                <ol>
+                <li>Secondary flow 30% to 50% to a larger UA</li>
+              </ol></li>
+<li>Metropolitan area low commuting: primary flow 10% to 30% to a UA</li>
+<li>Micropolitan area core: primary flow within an Urban Cluster of 10,000 to 49,999 (large UC)
+                <ol>
+<li>Secondary flow 30% to 50% to a UA</li>
+                  </ol></li>
+<li>Micropolitan high commuting: primary flow 30% or more to a large UC
+                <ol>
+<li>Secondary flow 30% to 50% to a UA</li>
+                  </ol></li>
+<li>Micropolitan low commuting: primary flow 10% to 30% to a large UC</li>
+<li>Small town core: primary flow within an Urban Cluster of 2,500 to 9,999 (small UC)
+  <ol>
+<li>Secondary flow 30% to 50% to a UA</li>
+<li>Secondary flow 30% to 50% to a large UC</li>
+    </ol></li>
+<li>Small town high commuting: primary flow 30% or more to a small UC
+  <ol>
+<li>Secondary flow 30% to 50% to a UA</li>
+<li>Secondary flow 30% to 50% to a large UC</li>
+  </ol></li>
+<li>Small town low commuting: primary flow 10% to 30% to a small UC</li>
+<li>Rural areas: primary flow to a tract outside a UA or UC
+  <ol>
+<li>Secondary flow 30% to 50% to a UA</li>
+<li>Secondary flow 30% to 50% to a large UC</li>
+<li>Secondary flow 30% to 50% to a small UC</li>
+    </ol></li></ol>
+<p>* 99&nbsp;&nbsp;Not coded: Census tract has zero population and no rural-urban identifier information</p>
+            
+
+            
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
     <div class="modal fade" id="attributionModal" tabindex="-1" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -160,7 +233,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
     <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js"></script>
     <script src="assets/leaflet-groupedlayercontrol/leaflet.groupedlayercontrol.js"></script>
-    
+    <!--<script src="assets/js/easy-button.js"></script>-->
     <script src="assets/js/app.js"></script>
   </body>
 </html>
