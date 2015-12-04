@@ -111,6 +111,26 @@ $.getJSON("data/cities.geojson", function (data) {
   cities.addData(data);
 });
 
+
+var counties = L.geoJson(null, {
+  style: function (feature) {
+    return {
+      color: "black",
+      fill: false,
+      fillOpacity: 0,
+      weight: 2,
+      opacity: 1
+    };
+  },
+  onEachFeature: function (feature, layer) {
+    
+    
+  }
+});
+$.getJSON("data/counties.geojson", function (data) {
+  counties.addData(data);
+});
+
 function clookup(geoid){
 
   var countyfips=geoid.substr(2, 3);
@@ -475,7 +495,8 @@ var baseLayers = {
 
 var groupedOverlays = {
   "Reference": {
-    "Cities": cities
+    "Cities": cities,
+    "Counties": counties
   }
 };
 
