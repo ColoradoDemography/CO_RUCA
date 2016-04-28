@@ -292,8 +292,8 @@ var ruca = L.geoJson(null, {
         
     optionnum = 10; //delete this later
     
-    console.log(optionnum);
-  console.log(feature.properties.RUCA);
+    //console.log(optionnum);
+  //console.log(feature.properties.RUCA);
   
     if(optionnum>=feature.properties.RUCA){
       return true;
@@ -609,7 +609,7 @@ legend.addTo(map);
 
 
 $( ".filter" ).change(function() {
-  console.log( "Handler for .change() called." );
+  //console.log( "Handler for .change() called." );
   
   map.removeLayer(ruca);
 
