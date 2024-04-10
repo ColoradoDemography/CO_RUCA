@@ -22,7 +22,20 @@ function sizeLayerControl() {
   $(".leaflet-control-layers").css("max-height", $("#map").height() - 50);
 }
 
+/* Basemap Layers */
+    var mbstyle = L.mapbox.tileLayer('statecodemog.map-i4mhpeb3', {
+        'zIndex': 1
+    });
+    var mbsat = L.mapbox.tileLayer('statecodemog.map-392qgzze');
 
+     var emerald = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>',
+        tileSize: 512,
+        maxZoom: 18,
+        zoomOffset: -1,
+        id: 'mapbox/outdoors-v11',
+        accessToken: 'pk.eyJ1Ijoic3RhdGVjb2RlbW9nIiwiYSI6Ikp0Sk1tSmsifQ.hl44-VjKTJNEP5pgDFcFPg'
+    });
 /* Basemap Layers */
 var mapquestOSM = L.tileLayer("https://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png", {
   maxZoom: 19,
