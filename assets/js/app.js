@@ -414,7 +414,7 @@ $.getJSON("data/ruca.geojson", function (data) {
 map = L.map("map", {
   zoom: 10,
   center: [39.13, -105.37],
-  layers: [mapquestOSM, ruca],
+  layers: [Esri_WorldStreetMap, ruca],
   zoomControl: false,
   attributionControl: false
 });
