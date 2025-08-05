@@ -306,70 +306,70 @@ var ruca = L.geoJson(null, {
     switch(feature.properties.RUCA) {
     case 10:
       return {
-        fillColor: "#276419",
+        fillColor: "#7f3b08",
         weight: 1,
         fillOpacity: 0.5,
         color: "#E0E0E0"        
       };
     case 9:
       return {
-        fillColor: "#4d9221",
+        fillColor: "#b35806",
         weight: 1,
         fillOpacity: 0.5,
         color: "#E0E0E0"        
       };
       case 8:
       return {
-        fillColor: "#7fbc41",
+        fillColor: "#e08214",
         weight: 1,
         fillOpacity: 0.5,
         color: "#E0E0E0"        
       };
     case 7:
       return {
-        fillColor: "#b8e186",
+        fillColor: "#fdb863",
         weight: 1,
         fillOpacity: 0.5,
         color: "#E0E0E0"        
       };
     case 6:
       return {
-        fillColor: "#e6f5d0",
+        fillColor: "#fee0b6",
         weight: 1,
         fillOpacity: 0.5,
         color: "#E0E0E0"        
       };
     case 5:
       return {
-        fillColor: "#fde0ef",
+        fillColor: "#d8daeb",
         weight: 1,
         fillOpacity: 0.5,
         color: "#E0E0E0"        
       };        
     case 4:
       return {
-        fillColor: "#f1b6da",
+        fillColor: "#b2abd2",
         weight: 1,
         fillOpacity: 0.5,
         color: "#E0E0E0"        
       };
     case 3:
       return {
-        fillColor: "#de77ae",
+        fillColor: "#8073ac",
         weight: 1,
         fillOpacity: 0.5,
         color: "#E0E0E0"        
       };
     case 2:
       return {
-        fillColor: "#c51b7d",
+        fillColor: "#542788",
         weight: 1,
         fillOpacity: 0.5,
         color: "#E0E0E0"        
       };
     case 1:
       return {
-        fillColor: "#8e0152",
+        fillColor: "#2d004b",
         weight: 1,
         fillOpacity: 0.5,
         color: "#E0E0E0"        
@@ -391,7 +391,7 @@ if (feature.properties) {
           "<tr><th>County</th><td>" + clookup(feature.properties.GEOID) + "</td></tr>" + 
           "<tr><th>Primary RUCA Code</th><td>" + feature.properties.RUCA + "</td></tr>" + 
           "<tr><th>Secondary RUCA Code</th><td>" + feature.properties.S_RUCA + "</td></tr>" +       
-          "<tr><th>Population 2010</th><td>" + feature.properties.POP2010 + "</td></tr>" + 
+          "<tr><th>Population 2020</th><td>" + feature.properties.POP2020 + "</td></tr>" + 
           "<tr><th>Area (SqMi)</th><td>" + feature.properties.AREAsqmi.toFixed(2) + "</td></tr>" + 
           "<tr><th>Density (Pop/SqMi)</th><td>" + feature.properties.PopPerSqMi.toFixed(2) + "</td></tr>" +           
           "<table>";
@@ -559,16 +559,16 @@ var layerControl = L.control.groupedLayers(baseLayers, groupedOverlays, {
         div = L.DomUtil.create('div', 'info legend');
 
           var legtext = 
-          "<span style='background:#8e0152;'></span>" +
-          "<span style='background:#c51b7d;'></span>"+
-          "<span style='background:#de77ae;'></span>"+
-          "<span style='background:#f1b6da;'></span>"+
-          "<span style='background:#fde0ef;'></span>" +
-          "<span style='background:#e6f5d0;'></span>" +
-          "<span style='background:#b8e186;'></span>"+
-          "<span style='background:#7fbc41;'></span>"+
-          "<span style='background:#4d9221;'></span>"+    
-          "<span style='background:#276419;'></span>" +    
+          "<span style='background:#2d004b;'></span>" +
+          "<span style='background:#542788;'></span>"+
+          "<span style='background:#8073ac;'></span>"+
+          "<span style='background:#b2abd2;'></span>"+
+          "<span style='background:#d8daeb;'></span>" +
+          "<span style='background:#fee0b6;'></span>" +
+          "<span style='background:#fdb863;'></span>"+
+          "<span style='background:#e08214;'></span>"+
+          "<span style='background:#b35806;'></span>"+    
+          "<span style='background:#7f3b08;'></span>" +    
           "<label>1</label>"+
           "<label>2</label>"+
           "<label>3</label>"+
